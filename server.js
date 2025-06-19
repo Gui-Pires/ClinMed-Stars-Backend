@@ -8,6 +8,7 @@ const app = express();
 
 // Middlewares primeiro
 app.use(cors());
+app.use(express.json());
 
 // Depois as rotas
 app.use('/auth', authRoutes);
